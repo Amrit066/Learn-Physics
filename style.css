@@ -462,9 +462,9 @@ footer>.social-media-icon-container>.social-media-content-2>a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background: linear-gradient(to top,rgb(255, 0, 128),rgb(158, 13, 255),rgb(0, 255, 191));
-    border: 2px solid rgb(197, 182, 182);
-    border-radius: 50%;
+    /* background: linear-gradient(to top,rgb(255, 0, 128),rgb(158, 13, 255),rgb(0, 255, 191)); */
+    /* border: 2px solid rgb(197, 182, 182); */
+    /* border-radius: 50%; */
     /* animation: anim1 1s linear infinite; */
 }
 @keyframes anim1{
@@ -475,14 +475,14 @@ footer>.social-media-icon-container>.social-media-content-2>a{
     100%{transform: rotateZ(360deg);}
 }
 footer>.social-media-icon-container>.social-media-content-2>a>.icon-container{
-    width: 95%;
-    height: 95%;
+    width: 60%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: black;
-    border: 2px solid rgb(173, 158, 158);
+    /* background-color: rgb(102, 95, 95); */
+    /* border: 2px solid rgb(173, 158, 158); */
     border-radius: 50%;
 }
 footer>.topics-learn-physics-container{
@@ -522,10 +522,10 @@ footer>.topics-learn-physics-container>.about-topics-container>.about-topics{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px dashed rgb(255, 81, 110) ;
+    border-bottom: 2px dashed rgb(101, 74, 255) ;
 }
 footer>.topics-learn-physics-container>.about-topics-container>.about-topics{
-    color: rgb(255, 81, 110);
+    color: rgb(101, 74, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     text-transform: capitalize;
