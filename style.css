@@ -491,6 +491,22 @@ footer>.topics-learn-physics-container{
     justify-content: center;
     align-items: center;
 }
+footer>.topics-learn-physics-container>.crafter{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>.topics-learn-physics-container>.crafter>p{
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+footer>.topics-learn-physics-container>.crafter>p.crafter-name{
+    color: rgb(101, 74, 255);
+}
 footer>.topics-learn-physics-container>.about-topics-container{
     width: 60%;
     height: 90%;
@@ -541,4 +557,15 @@ footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics>a
 footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics>a>p:hover{
     color: rgb(128, 93, 255);
 
+}
+footer>.copyright{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>.copyright>p{
+    color: rgb(101, 74, 255);
+    font-family: cursive;
 }
