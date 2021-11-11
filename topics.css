@@ -15,7 +15,6 @@ section{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid red;
     margin-top: 2em;
 }
 section>.heading{
@@ -66,3 +65,124 @@ section>.topics-list>a:hover>p{
 }
 
 /* CSS FOR SECTION- TOPICS CONTENTS */
+
+.topics-contents{
+    width: 100%;
+    height: 200em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+}
+.topics-contents>.section-heading{
+    position: relative;
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: inherit;
+    border-top: 2px solid  rgb(0, 128, 128);
+}
+.topics-contents>.section-heading>p{
+    position: absolute;
+    top: -15%;
+    width: 30%;
+    height: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 216, 230);
+    border: 2px solid rgb(0, 128, 128);
+    border-radius: 2em;
+}
+.topics-contents>.topics-contents-container{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.topics-contents>.topics-contents-container>.topic-name{
+    position:relative;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(0, 128, 128);
+}
+.topics-contents>.topics-contents-container>.topic-name>p{
+    position: absolute;
+    top: -15%;
+    left: 2%;
+    width: 30%;
+    height: 42%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 216, 230);
+    border: 2px solid rgb(0, 128, 128);
+    border-radius: 2em;
+}
+.topics-contents>.topics-contents-container>.contents-lists{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 216, 230);
+    border-radius: 1em;
+}
+.topics-contents>.topics-contents-container>.contents-lists>ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2em;
+}
+.topics-contents>.topics-contents-container>.contents-lists>ul>li{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.topics-contents>.topics-contents-container>.contents-lists>ul>li>h2{
+    width: 90%;
+    height: 8%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 128, 128);
+}
+
+.topics-contents>.topics-contents-container>.contents-lists>ul>li>ul{
+    width: 100%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.topics-contents>.topics-contents-container>.contents-lists>ul>li>ul>li{
+    width: 50%;
+    height: 12%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1em;
+    color: rgb(19, 18, 18);
+}
