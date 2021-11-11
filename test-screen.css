@@ -47,3 +47,60 @@ header>.test-title>p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
 }
+
+/* CSS FOR SECTION-INSTRUCTIONS */
+
+section{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5em;
+}
+section>.instructions{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(100, 149, 237,0.5);
+    border-radius: 1em;
+}
+section>.instructions>p{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom:2px solid rgb(70, 72, 75);
+}
+section>.instructions>.instructions-content{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>.instructions>.instructions-content>ol{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+section>.instructions>.instructions-content>ol>li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-top: 1em;
+}
