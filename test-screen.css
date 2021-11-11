@@ -104,3 +104,135 @@ section>.instructions>.instructions-content>ol>li{
     color: black;
     margin-top: 1em;
 }
+
+/* CSS FOR SECTION-QUESTIONS */
+
+.questions{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5em;
+}
+.questions>.question-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px dashed royalblue;
+}
+.questions>.question-container>.questions-dashboard{
+    width: 12%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    border: 2px solid rgb(70, 72, 75);
+    border-radius: 5px;
+    background-color:rgba(70, 72, 75,0.5);
+    margin-left: 1em;
+    margin-top: 3em;
+}
+.questions>.question-container>.questions-dashboard>span{
+    width: 2.5em;
+    height: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 151, 243);
+    border:1px solid rgba(70, 72, 75,0.5);
+    border-radius: 5px;
+    margin: 0 1em;
+}
+.questions>.question-container>.questions-dashboard>span:hover{
+    cursor: pointer;
+    background-color:rgba(120, 151, 243,0.5);
+}
+.questions>.question-container>.question-content{
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(135, 206, 235);
+    border: 2px solid rgba(70,72,75,0.5);
+    border-radius: 1rem;
+}
+.questions>.question-container>.question-content>p{
+    width: 98%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+.questions>.submit-btn{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questions>.submit-btn>p{
+    width: 20%;
+    height: 80%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(41, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(65, 105, 225,0.5);
+    border: 2px solid rgba(70,72,75,0.5);
+    border-radius: 1.5em;
+}
+.questions>.submit-btn>p:hover{
+    cursor: pointer;
+    background-color: rgb(66, 250, 146);
+    color: rgb(70, 66, 66);
+}
+footer{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(32, 31, 31);
+}
+footer>.crafter{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>.crafter>p{
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+footer>.crafter>p.crafter-name{
+    color: rgb(101, 74, 255);
+}
+footer>.copyright{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>.copyright>p{
+    color: rgb(101, 74, 255);
+    font-family: cursive;
+}
