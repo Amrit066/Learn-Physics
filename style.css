@@ -8,11 +8,11 @@
 header{
     width: 100%;
     height: 600px;
-    background: url(./images/homepage.jpg);
-    object-fit: contain;
+    background: url(./images/hero-image.jpg);
+    /* background-size: cover; */
 }
 header>.navbar{
-    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -20,12 +20,34 @@ header>.navbar{
     align-items: center;
 }
 header>.navbar>.left-content-navbar{
-    width: 40px;
-    height: 40px;
-    display: block;
-    background-color: rgb(252, 88, 88);
-    border-radius: 2px;
-    padding-top: 10px;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 236, 190,1);
+    border-radius: 5px;
+    /* padding-top: 10px; */
+}
+header>.navbar>.left-content-navbar>.logo-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>.navbar>.left-content-navbar>.logo-container>p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>.navbar>.left-content-navbar>.logo-container>p>span{
+    color: royalblue;
 }
 header>.navbar>.right-content-navbar{
     width: 600px;
@@ -56,20 +78,30 @@ header>.navbar>.right-content-navbar>ul>li>a:hover{
     color: rgb(252, 249, 249);
 }
 header>.quote{
-    width: 200px;
+    width: 500px;
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     margin-left: 40px;
-    border: 2px solid red;
 }
 header>.quote>p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: cursive;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(216, 191, 216);
+    padding: 0 1em;
+    color: rgb(225, 227, 233);
+}
+header>.quote>p>span{
+    display: block;
+    margin-left: 15em;
+    margin-top: 2em;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(59, 105, 230);
 }
 header>.header-content{
     width: 100%;
@@ -78,13 +110,13 @@ header>.header-content{
     justify-content: center;
     align-items: center;
     margin-top: 120px;
-    border: 2px solid red;
 }
 header>.header-content>p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     font-weight: bold;
-    color: rgb(216, 191, 216);
+    letter-spacing: 1.3px;
+    color: rgb(255, 255, 255);
 }
 
 /* CSS FOR BUTTON */
@@ -125,18 +157,16 @@ header>.header-content>p{
 /* CSS FOR SECTION-TOPICS */
 section{
     width: 100%;
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    border:2px solid red;
 }
 .section-topic>.topic{
     width: 100%;
     height: 50px;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,14 +187,33 @@ section{
     border: 2px SOLID rgb(63, 61, 61);
     border-radius: 5PX;
 }
+.section-topic>.important{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-topic>.important>p{
+    color: rgb(255, 0, 106);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    animation: anim2 1s 1s linear infinite;
+}
+@keyframes anim2{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
 .section-topic>.topic-container{
-    width: 100%;
+    width: 90%;
     height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
-    margin-top: 10px;
+    background-color: rgb(95, 158, 160);
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+    margin-top: 15px;
 }
 .section-topic>.topic-container>.topic-left-container{
     width: 30%;
@@ -172,7 +221,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: inherit;
     margin-left: 30px;
 }
 .section-topic>.topic-container>.topic-left-container>.topic-left-content{
@@ -181,40 +229,52 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 30px;
 }
-.section-topic>.topic-container>.topic-left-container>.topic-left-content>img{
+.section-topic>.topic-container>.topic-left-container>.topic-left-content>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.section-topic>.topic-container>.topic-left-container>.topic-left-content>a>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .section-topic>.topic-container>.topic-right-container{
-    width: 60%;
+    width: 65%;
     height: 95%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: inherit;
     margin-right: 10px;
 }
 .section-topic>.topic-container>.topic-right-container>.topic-right-content{
     width: 95%;
     height: 95%;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    background-color: rgb(197, 186, 186);
-    border: 2px solid black;
+    background-color: rgb(224, 217, 217);
     border-radius: 10px;
 }
 .section-topic>.topic-container>.topic-right-container>.topic-right-content>p{
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 5px;
 }
+
 
 /* CSS FOR SECTION-TEST */
 .section-test{
@@ -413,6 +473,9 @@ section{
 }
 .section-facts>.facts-container>ul>li>p:nth-child(even){
     color: rgb(255, 9, 83);
+}
+.section-facts>.facts-container>ul>li>p>span{
+    color: rgb(27, 74, 214);
 }
 
 /* CSS FOR FOOTER PART */
