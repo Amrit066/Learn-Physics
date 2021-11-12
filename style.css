@@ -88,7 +88,7 @@ header>.quote{
     margin-left: 40px;
 }
 header>.quote>p{
-    font-family: cursive;
+    font-family: 'Yuji Syuku', serif;
     font-size: 25px;
     font-weight: bold;
     padding: 0 1em;
@@ -98,7 +98,7 @@ header>.quote>p>span{
     display: block;
     margin-left: 15em;
     margin-top: 2em;
-    font-family: cursive;
+    font-family:'Yuji Syuku', serif;;
     font-size: 18px;
     font-weight: bold;
     color: rgb(59, 105, 230);
@@ -468,7 +468,7 @@ section{
 }
 .section-facts>.facts-container>ul>li>p{
     color: black;
-    font-family: cursive;
+    font-family: 'Yuji Syuku', serif;;
     font-size: 18px;
 }
 .section-facts>.facts-container>ul>li>p:nth-child(even){
