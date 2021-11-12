@@ -4,6 +4,10 @@
     box-sizing: border-box;
     transition: 0.5s;
 }
+body{
+    background: url(./images/facts2.jpg);
+    background-size: contain;
+}
 
 /* CSS FOR HEADER */
 
@@ -41,4 +45,112 @@ header>.quote>p{
     font-family: cursive;
     font-size: 20px;
     color: rgb(75, 71, 71);
+}
+
+/* CSS FOR SECTION */
+
+section{
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section>.fact-container{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+section>.fact-container>.fact-topic{
+    width: 90%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid rgb(65, 105, 225);
+    margin: 0 20px;
+}
+section>.fact-container>.fact-topic>p{
+    position: absolute;
+    top: -30%;
+    left: 5%;
+    width: 25%;
+    height: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 173, 243);
+    border: 2px solid rgb(65, 105, 225);
+    border-radius: 1.5em;
+}
+section>.fact-container>.fact-content{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: skyblue;
+    border-radius: 1em;
+    padding: 20px 10px;
+}
+section>.fact-container>.fact-content>p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+section>.fact-container>.fact-content>p>span{
+    font-weight: bold;
+    color: rgb(65, 105, 225);
+}
+
+/* CSS FOR FOOTER */
+footer{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(32, 31, 31);
+}
+footer>.crafter{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer>.crafter>p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+footer>.crafter>p.crafter-name{
+    color: rgb(101, 74, 255);
+}
+footer>.copyright{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer>.copyright>p{
+    color: rgb(101, 74, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
