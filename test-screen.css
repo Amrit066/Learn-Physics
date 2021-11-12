@@ -172,6 +172,26 @@ section>.instructions>.instructions-content>ol>li{
     width: 98%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5em;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.questions>.question-container>.question-content>form{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.questions>.question-container>.question-content>form>label{
+    color: rgb(97, 89, 89);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.questions>.question-container>.question-content>form>input:checked+label{
+    color: royalblue;
 }
 .questions>.submit-btn{
     width: 90%;
