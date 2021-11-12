@@ -468,7 +468,7 @@ section{
 }
 .section-facts>.facts-container>ul>li>p{
     color: black;
-    font-family: 'Yuji Syuku', serif;;
+    font-family: 'Yuji Syuku', serif;
     font-size: 18px;
 }
 .section-facts>.facts-container>ul>li>p:nth-child(even){
@@ -631,5 +631,5 @@ footer>.copyright{
 }
 footer>.copyright>p{
     color: rgb(101, 74, 255);
-    font-family: cursive;
+    font-family:'Yuji Syuku', serif;
 }
