@@ -8,16 +8,26 @@
 header{
     width: 100%;
     height: 600px;
-    background: url(./images/hero-image.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: url(./images/hero-image.jpg) no-repeat;
     /* background-size: cover; */
 }
 header>.navbar{
+    width: 100%;
+    height: 10%;
     position: sticky;
     top: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content:space-around;
     align-items: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 header>.navbar>.left-content-navbar{
     width: 180px;
@@ -50,9 +60,8 @@ header>.navbar>.left-content-navbar>.logo-container>p>span{
     color: royalblue;
 }
 header>.navbar>.right-content-navbar{
-    width: 600px;
+    width: 70%;
     height: 60px;
-    /* border: 2px solid red; */
     margin-top: 10px;
 }
 header>.navbar>.right-content-navbar>ul{
@@ -62,6 +71,8 @@ header>.navbar>.right-content-navbar>ul{
     padding-top: 10px;
 }
 header>.navbar>.right-content-navbar>ul>li{
+    width: 30%;
+    height: 100%;
     list-style: none;
 }
 header>.navbar>.right-content-navbar>ul>li>a{
@@ -78,26 +89,53 @@ header>.navbar>.right-content-navbar>ul>li>a:hover{
     color: rgb(252, 249, 249);
 }
 header>.quote{
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 280px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 30px;
+    /* margin-left: 40px; */
+}
+@media screen and (max-width:720px){
+    header>.quote{
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        /* margin-left: 40px; */
+    }
 }
 header>.quote>p{
+    width: 45%;
+    height: 100%;
     font-family: 'Yuji Syuku', serif;
     font-size: 25px;
     font-weight: bold;
-    padding: 0 1em;
+    padding:1em 1em;
     color: rgb(225, 227, 233);
+}
+@media screen and (max-width:720px){
+    header>.quote>p{
+        width: 60%;
+        height: 100%;
+        font-family: 'Yuji Syuku', serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding:1em 1em;
+        color: rgb(225, 227, 233);
+    }  
 }
 header>.quote>p>span{
     display: block;
-    margin-left: 15em;
-    margin-top: 2em;
+    margin-left: 5%;
+    margin-top: 1em;
     font-family:'Yuji Syuku', serif;;
     font-size: 18px;
     font-weight: bold;
@@ -105,11 +143,12 @@ header>.quote>p>span{
 }
 header>.header-content{
     width: 100%;
-    height: 100px;
+    height: 20%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 header>.header-content>p{
     font-family: 'Courier New', Courier, monospace;
@@ -117,6 +156,15 @@ header>.header-content>p{
     font-weight: bold;
     letter-spacing: 1.3px;
     color: rgb(255, 255, 255);
+}
+@media screen and (max-width:720px){
+    header>.header-content>p{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+        color: rgb(255, 255, 255);
+    }
 }
 
 /* CSS FOR BUTTON */
@@ -133,6 +181,13 @@ header>.header-content>p{
     width:20%;
     height: 90%;
     text-decoration: none;
+}
+@media screen and (max-width:720px){
+    .link-to-main-page>a{
+        width:30%;
+        height: 80%;
+        text-decoration: none;
+    }
 }
 .link-to-main-page>a>p{
     width: 100%;
@@ -159,10 +214,22 @@ section{
     width: 100%;
     height: 900px;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+@media screen and (max-width:720px){
+    section{
+        width: 100%;
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 }
 .section-topic>.topic{
     width: 100%;
@@ -215,13 +282,37 @@ section{
     box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
     margin-top: 15px;
 }
+@media screen and (max-width:720px){
+    .section-topic>.topic-container{
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(95, 158, 160);
+        border-radius: 5px;
+        box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+        margin-top: 15px;
+    }
+}
 .section-topic>.topic-container>.topic-left-container{
     width: 30%;
     height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
+}
+@media screen and (max-width:720px){
+    .section-topic>.topic-container>.topic-left-container{
+        width: 50%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
 }
 .section-topic>.topic-container>.topic-left-container>.topic-left-content{
     width: 95%;
@@ -255,6 +346,17 @@ section{
     align-items: center;
     margin-right: 10px;
 }
+@media screen and (max-width:720px){
+    .section-topic>.topic-container>.topic-right-container{
+        width: 90%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
 .section-topic>.topic-container>.topic-right-container>.topic-right-content{
     width: 95%;
     height: 95%;
@@ -273,6 +375,13 @@ section{
     justify-content: center;
     align-items: center;
     padding: 0 5px;
+}
+@media screen and (max-width:720px){
+    section>.topics-link>a{
+        width:50%;
+        height: 80%;
+        text-decoration: none;
+    }
 }
 
 
@@ -312,6 +421,18 @@ section{
     align-items: center;
     margin-top: 10px;
 }
+@media screen and (max-width:720px){
+    .section-test>.test-container{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }  
+}
 .section-test>.test-container>.test-content{
     width: 30%;
     height: 90%;
@@ -322,6 +443,19 @@ section{
     background-color: rgba(162, 137, 255,0.5);
     border-radius: 5px;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+@media screen and (max-width:900px){
+    .section-test>.test-container>.test-content{
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(162, 137, 255,0.5);
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    } 
 }
 .section-test>.test-container>.test-content>.top-part{
     width: 100%;
@@ -409,12 +543,27 @@ section{
     cursor: pointer;
     background-color: rgb(128, 245, 81);
 }
+@media screen and (max-width:720px){
+    .test-link>a{
+        width:50%;
+        height: 80%;
+        text-decoration: none;
+    }
+}
 
 /* CSS FOR SECTION-'FACTS' */
 
 .section-facts{
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+@media screen and (max-width:720px){
+    .section-facts{
+        width: 100%;
+        height: 1000px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 .section-facts>.fact{
     width: 100%;
@@ -451,6 +600,21 @@ section{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width:720px){
+    .section-facts>.facts-container{
+        width: 90%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(162, 137, 255,0.5) ;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }  
+}
 .section-facts>.facts-container>ul{
     width: 90%;
     height: 90%;
@@ -477,7 +641,13 @@ section{
 .section-facts>.facts-container>ul>li>p>span{
     color: rgb(27, 74, 214);
 }
-
+@media screen and (max-width:720px){
+    .section-facts>.facts-link>a{
+        width:50%;
+        height: 80%;
+        text-decoration: none;
+    }
+}
 /* CSS FOR FOOTER PART */
 
 footer{
@@ -492,7 +662,7 @@ footer{
 }
 footer>.social-media-icon-container{
     width: 90%;
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -530,6 +700,15 @@ footer>.social-media-icon-container>.social-media-content-2>a{
     /* border-radius: 50%; */
     /* animation: anim1 1s linear infinite; */
 }
+@media screen and (max-width:720px){
+    footer>.social-media-icon-container>.social-media-content-2>a{
+        width: 15%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: 
+    }
+}
 @keyframes anim1{
     0%{transform: rotateZ(10deg);}
     25%{transform: rotateZ(100deg);}
@@ -555,6 +734,16 @@ footer>.topics-learn-physics-container{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:720px){
+    footer>.topics-learn-physics-container{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    } 
+}
 footer>.topics-learn-physics-container>.crafter{
     width: 30%;
     height: 90%;
@@ -567,6 +756,22 @@ footer>.topics-learn-physics-container>.crafter>p{
     color: white;
     font-family: cursive;
     font-size: 25px;
+}
+
+@media screen and (max-width:720px){
+    footer>.topics-learn-physics-container>.crafter{
+        width: 90%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer>.topics-learn-physics-container>.crafter>p{
+        color: white;
+        font-family: cursive;
+        font-size: 20px;
+    }
 }
 footer>.topics-learn-physics-container>.crafter>p.crafter-name{
     color: rgb(101, 74, 255);
@@ -596,7 +801,7 @@ footer>.topics-learn-physics-container>.about-topics-container>.about-topics{
 }
 footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics{
     width: 100%;
-    height: 72%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -607,9 +812,18 @@ footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics>a
     width: 50%;
     height: 15%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics>a{
+        text-decoration: none;
+        width: 90%;
+        height: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
 }
 footer>.topics-learn-physics-container>.about-topics-container>.list-of-topics>a>p{
     width: 100%;
